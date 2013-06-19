@@ -89,6 +89,11 @@ public class Server {
 				| (int)(data[position + 3] & 0xFF);
 	}
 	
+	/**
+	 * int ×ª×Ö½Ú
+	 * @param num
+	 * @return
+	 */
 	public static byte[] intToBytes(int num) {
 		byte[] data = new byte[4];
 		data[0] = (byte) ((num >> 24) & 0xFF);
